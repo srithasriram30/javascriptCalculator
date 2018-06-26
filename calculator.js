@@ -1,66 +1,23 @@
-var decimal = false;
-var result_string = "";
+//var decimal = false;
 
-$(".num").click(function() {
-  $("span").append($(this).val());
-  console.log(result_string);
-});
+$(".calcButton").click(function(){
 
-$(".clear").click(function() {
-  $("span").empty();
-});
-
-
-
-  $("#decimal").click(function() {
-    if(!decimal) {
-      $("span").append($(this).val());
-      decimal = true;
-    }
-  });
-
-$("#sum").click(function(){
-
-  result_string =  result_string + $("span").text() + "+";
-  $("span").empty();
-  console.log(result_string);
-});
-
-$("#difference").click(function(){
-
-  result_string =  result_string + $("span").text() + "-";
-  $("span").empty();
-  console.log(result_string);
-
-});
-
-$("#multiply").click(function(){
-
-  result_string =  result_string + $("span").text() + "*";
-  $("span").empty();
-  console.log(result_string);
-
-});
-
-$("#divide").click(function(){
-
-  result_string =  result_string + $("span").text() + "/";
-  $("span").empty();
-  console.log(result_string);
+    $("input[type='text']").val($("input[type='text']").val()+ $(this).val());
 });
 
 $("#clear").click(function(){
+  $("input[type='text']").val("");
+});
 
-  $("span").empty();
-  console.log(result_string);
+$("#calculate").click(function(){
+  $("input[type='text']").val(eval($("input[type='text']").val()));
 });
 
 
-$("#result").click(function(){
 
-  var final_number = $("span").text()
-  $("span").empty();
-  result_string =  result_string + final_number;
-  $("span").append(eval(result_string));
-  result_string = "";
+$("#backspace").click(function(){
+  $("input[type='text']").val(
+      function(index, value){
+          return value.substr(0, value.length - 1);
+  })
 });

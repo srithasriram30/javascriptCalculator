@@ -3,7 +3,7 @@
   <head>
     <title>Calculator</title>
     <link rel="stylesheet" href="calculator.css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
 
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"
@@ -14,35 +14,78 @@
   <body>
     <h1>Calculator</h1>
     <div id="calculator">
-    <div id="display"><span></span></div>
-    <div id="keys">
-      <p>
-        <button class="num" value="7">7</button>
-        <button class="num" value="8">8</button>
-        <button class="num" value="9">9</button>
-        <button id="sum">+</button>
-      </p>
-      <p>
-        <button class="num" value="4">4</button>
-        <button class="num" value="5">5</button>
-        <button class="num" value="6">6</button>
-        <button id="difference">-</button>
-      </p>
-      <p>
-        <button class="num" value="1">1</button>
-        <button class="num" value="2">2</button>
-        <button class="num" value="3">3</button>
-        <button id="multiply">*</button>
-      </p>
-      <p>
-        <button id="decimal"value=".">.</button>
-        <button class="num" value="0">0</button>
-        <button id="result">=</button>
-        <button id="divide">/</button>
-      </p>
-      <p><button class="clear" style="width: 92%"> Clear </button></p>
+      <form>
+        <input id="display" type="text">
+      </form>
+      <table>
+        <tr>
+          <td colspan ="2">
+            <input id="clear" type="button" value="Clear">
+          </td>
+          <td>
+            <input id="backspace" type="button" value="<">
+          </td>
+          <td>
+            <input class="calcButton" type="button" value="/">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="calcButton" type="button" value=7>
+          </td>
+          <td>
+            <input class="calcButton" type="button" value=8>
+          </td>
+          <td>
+            <input class="calcButton" type="button" value=9>
+          </td>
+          <td>
+            <input class="calcButton" type="button" value="*">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="calcButton" type="button" value=4>
+          </td>
+          <td>
+            <input class="calcButton" type="button" value=5>
+          </td>
+          <td>
+            <input class="calcButton" type="button" value=6>
+          </td>
+          <td>
+            <input class="calcButton" type="button" value="-">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="calcButton" type="button" value=3>
+          </td>
+          <td>
+            <input class="calcButton" type="button" value=2>
+          </td>
+          <td>
+            <input class="calcButton" type="button" value=1>
+          </td>
+          <td>
+            <input class="calcButton" type="button" value="+">
+          </td>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input class="calcButton" id="zero" type="button" value=0>
+          </td>
+          <td>
+            <input id="decimal" class="calcButton" type="button" value=".">
+          </td>
+          <td>
+            <input id="calculate" type="button" value="=">
+          </td>
+          </td>
+        </tr>
+      </table>
     </div>
-  </div>
 
   <script src="calculator.js">
   </script>
