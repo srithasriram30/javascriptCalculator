@@ -1,18 +1,30 @@
 table {
   margin: 0;
   padding: 0;
+  margin: 0 auto;
 }
 
 input[type="button"] {
   padding: 1em;
-  width: 4em;
+  width: 4.3em;
+  font-family: 'Arima Madurai', cursive;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 input[type="text"] {
-  width: 20em;
+  width: 12em;
+  margin: 0.5em 0;
+  text-align: right;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 1.5em;
 }
 
 #zero,
 #clear {
-  width: 82px;
+  width: 8.8em;
+}
+
+#calculator {
+  text-align: center;
 }
