@@ -1,9 +1,9 @@
 body {
-background-color: #fdfff5;
+background-color: #F4F2F2;
 }
 
 h1 {
-  color: #193441;
+  color: #4A4784;
   text-align: center;
 }
 
@@ -20,8 +20,8 @@ input[type="button"] {
   font-weight: bold;
   font-size: 1em;
   border: none;
-  background-color: #91aa9d
-  color: #193441;
+  background-color: #B3B2CC;
+  color: #4A4784;
 }
 
 input[type="text"] {
@@ -31,8 +31,8 @@ input[type="text"] {
   font-family: 'Cutive Mono', monospace;
   font-size: 1.5em;
   border: none;
-  background-color: #193441;
-  color: #d1dbbd;
+  background-color: #1F212D;
+  color: #7CA0C3;
 }
 
 #zero,
